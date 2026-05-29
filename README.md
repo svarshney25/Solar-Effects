@@ -16,12 +16,12 @@ Earth
 
 ## Notebook Structure
 
-Setup & Data Loading — Mounts Google Drive, reads Mars CSV, parses timestamps
-Mars CME Detection — Flags time steps where ≥2 of 3 parameters (density, velocity, temperature) exceed 2.5σ above their mean
-Earth Data Loading & Cleaning — Reads all four Earth datasets, removes negative values and outliers beyond 3–3.5σ
-Earth Time-Series Plots — Raw and smoothed (30-point rolling average) plots of all four Earth parameters with CME windows overlaid
-Histogram Analysis — Distributions of each parameter split into three periods: pre-CME, during CME, and post-CME
-Helper Functions — local_average() for smoothing; create_histograms() for multi-panel histogram plots
+1. Setup & Data Loading — Mounts Google Drive, reads Mars CSV, parses timestamps
+2. Mars CME Detection — Flags time steps where ≥2 of 3 parameters (density, velocity, temperature) exceed 2.5σ above their mean
+3. Earth Data Loading & Cleaning — Reads all four Earth datasets, removes negative values and outliers beyond 3–3.5σ
+4. Earth Time-Series Plots — Raw and smoothed (30-point rolling average) plots of all four Earth parameters with CME windows overlaid
+5. Histogram Analysis — Distributions of each parameter split into three periods: pre-CME, during CME, and post-CME
+6. Helper Functions — local_average() for smoothing; create_histograms() for multi-panel histogram plots
 
 Requirements
 - pandas
