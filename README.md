@@ -32,6 +32,6 @@ Requirements
 The notebook is designed to run in Google Colab with data files stored in Google Drive.
 Notes
 - fillna(method='ffill') is used to forward-fill sporadic gaps in all datasets.
-- The Mars detection uses an OR-style threshold (≥2 of 3 parameters), while the Earth detection uses an AND-style threshold requiring all four parameters to exceed their thresholds simultaneously — the Earth version is therefore more conservative.
-- The get_variable_name() helper uses Python frame inspection to auto-label histogram axes; it may not work reliably in all environments.
+- The Mars detection uses an OR-style threshold (≥2 of 3 parameters), while the Earth detection uses an AND-style threshold requiring all four parameters to exceed their thresholds simultaneously. The Earth version is therefore more conservative.
+- The get_variable_name() helper function uses Python frame inspection to auto-label histogram axes; it may not work reliably in all environments.
 - Unit conversion from eV to Kelvin (factor: 11604.525) is applied where column names contain 'eV'.
