@@ -9,19 +9,19 @@ Mars (MAVEN/SWIA)
 - MAVEN_SWIA_Mars.csv for proton number density, velocity, and temperature at Mars
 
 Earth
-- DSCOVR_temperature_Earth.csv — solar wind proton temperature (DSCOVR satellite)
-- GOES_flux_Earth.csv — proton flux (GOES satellite)
-- ACE_density_Earth.csv — proton density (ACE satellite)
-- NOAA_KP_Earth.csv — Kp geomagnetic index (NOAA)
+- DSCOVR_temperature_Earth.csv - solar wind proton temperature (DSCOVR satellite)
+- GOES_flux_Earth.csv - proton flux (GOES satellite)
+- ACE_density_Earth.csv - proton density (ACE satellite)
+- NOAA_KP_Earth.csv - Kp geomagnetic index (NOAA)
 
 ## Notebook Structure
 
-1. Setup & Data Loading — Mounts Google Drive, reads Mars CSV, parses timestamps
-2. Mars CME Detection — Flags time steps where ≥2 of 3 parameters (density, velocity, temperature) exceed 2.5σ above their mean
-3. Earth Data Loading & Cleaning — Reads all four Earth datasets, removes negative values and outliers beyond 3–3.5σ
-4. Earth Time-Series Plots — Raw and smoothed (30-point rolling average) plots of all four Earth parameters with CME windows overlaid
-5. Histogram Analysis — Distributions of each parameter split into three periods: pre-CME, during CME, and post-CME
-6. Helper Functions — local_average() for smoothing; create_histograms() for multi-panel histogram plots
+1. Setup & Data Loading - Mounts Google Drive, reads Mars CSV, parses timestamps
+2. Mars CME Detection - Flags time steps where ≥2 of 3 parameters (density, velocity, temperature) exceed 2.5σ above their mean
+3. Earth Data Loading & Cleaning - Reads all four Earth datasets, removes negative values and outliers beyond 3–3.5σ
+4. Earth Time-Series Plots - Raw and smoothed (30-point rolling average) plots of all four Earth parameters with CME windows overlaid
+5. Histogram Analysis - Distributions of each parameter split into three periods: pre-CME, during CME, and post-CME
+6. Helper Functions - local_average() for smoothing; create_histograms() for multi-panel histogram plots
 
 Requirements
 - pandas
